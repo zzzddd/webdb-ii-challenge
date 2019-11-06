@@ -5,6 +5,9 @@ exports.up = function(knex) {
     tbl.string("make", 128).notNullable();
     tbl.string("model", 128).notNullable();
     tbl.integer("mileage");
+    tbl.string("Salvage", 18).notNullable();
+    tbl.string("VIN", 18).notNullable();
+    table.timestamps(true, true);
   });
 };
 
